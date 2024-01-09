@@ -260,6 +260,25 @@ article.active {
   border-radius: 3px;
 }
 
+.article-note {
+  position: relative;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+
+.article-note::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+  /* margin-top: 5px; */
+  margin-bottom: 3px;
+}
+
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
   height: 5px; /* for horizontal scrollbar */
@@ -1278,6 +1297,7 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: hotpink;
+  cursor: pointer;
 }
 
 /* selected link */
