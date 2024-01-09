@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="./assets/js/jquery-3.7.1.js"></script>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,13 +44,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/profile_rounded.png" alt="Akeem Hart" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Akeem Hart">Akeem Hart</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Physicist, Software Engineer, Tinkerer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,11 +76,11 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:a.l.hart@qmul.ac.uk" class="contact-link">a.l.hart@qmul.ac.uk</a>
             </div>
 
           </li>
-
+          <!--
           <li class="contact-item">
 
             <div class="icon-box">
@@ -92,7 +94,8 @@
             </div>
 
           </li>
-
+          -->
+          <!--
           <li class="contact-item">
 
             <div class="icon-box">
@@ -106,7 +109,7 @@
             </div>
 
           </li>
-
+          -->
           <li class="contact-item">
 
             <div class="icon-box">
@@ -116,7 +119,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Queen Mary University of London, London, UK</address>
             </div>
 
           </li>
@@ -126,25 +129,25 @@
         <div class="separator"></div>
 
         <ul class="social-list">
-
+          <!--
           <li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
-
+          -->
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://twitter.com/akeem_hart" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
-
+          <!--
           <li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
+          -->
         </ul>
 
       </div>
@@ -174,19 +177,29 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>CV</button>
           </li>
 
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+          
+          <!--
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
-
+          -->
+          
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
-
+          <!--
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+          -->
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Talks</button>
           </li>
 
         </ul>
@@ -201,6 +214,8 @@
         - #ABOUT
       -->
 
+      <article class="about" id="loadedContent"></article>
+
       <article class="about  active" data-page="about">
 
         <header>
@@ -209,17 +224,18 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I am a second year PhD student studying at Queen Mary University of London under Dr Abbey Waldron. I am working on investigating the properties of neutrinos as part of the MINERνA and DUNE collaborations. If you don’t know what any of the physics jargon on this page means, take a look at the talks and presentations I’ve given, there’s a good chance I’ve discussed some of it before, or feel free to drop me an email, I love talking about exciting physics.
           </p>
-
+          <h1>MINERνA</h1>
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            * Data Preservation: I have worked on the data preservation effort at MINERνA; working to ensure the medium to long term usability and utility of MINERνA data for the wider particle physics community. I extended existing data preservation software to enable new analyses with MINERνA data
+          </p>
+          <p>
+            * Analysis: I am working on an analysis of muon neutrino inclusive scattering across the different nuclear targets in MINERvA. The objective is to contribute to advancing our understanding of how various nuclear environments influence neutrino interactions and our ability to observe them. Knowing more about how neutrinos behave has a beneficial effect all across the field of neutrino physics and even beyond.
+          </p>
+          <h1>DUNE</h1>
+          <p>
+            * 2x2: I am working on the 2x2 near-detector demonstrator at DUNE. The 2x2 LArTPC modules have recently been constructed at the University of Bern and shipped to Fermilab, where they will sit in the NuMI beamline, taking the first neutrino beam LArTPC data at DUNE. I work on the installation and testing of these modules, as well as DAQ software integration and development.
           </p>
         </section>
 
@@ -227,10 +243,13 @@
         <!--
           - service
         -->
+        
+
+        <!--AKEEM TO DO - FILL THIS SECTION IN!!!!!!!!!!!!!!!11
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I'm working on</h3>
 
           <ul class="service-list">
 
@@ -302,113 +321,12 @@
           </ul>
 
         </section>
+        --->
 
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
 
 
         <!--
-          - testimonials modal
+          - testimonials modal --- WHY CAN'T I DELETE THIS WITHOUT BREAKING PAGE NAVIGATION!?
         -->
 
         <div class="modal-container" data-modal-container>
@@ -452,55 +370,6 @@
         </div>
 
 
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -509,15 +378,15 @@
 
 
       <!--
-        - #RESUME
+        - #CV
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="cv" data-page="cv">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">CV</h2>
         </header>
-
+        <p class="about-text inline-block">A pdf version of this CV can be downloaded <a href="./assets/files/cv.pdf" class="inline-block">here</a> (Last Updated: 5/June/2023)</p>
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -532,42 +401,23 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">PhD in Physics</h4>
 
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+              <span>Queen Mary University of London, 2022-Present</span>
 
             </li>
-
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">MSc in Physics</h4>
 
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
+              <span>King's College London, 2019-2021</span>
 
             </li>
-
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">BSc in Physics</h4>
 
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
+              <span>Durham University, 2016-2019</span>
 
             </li>
 
@@ -589,43 +439,30 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Computer Programmer</h4>
 
-              <span>2015 — Present</span>
+              <span>PPCL, Sep 2023 — Present</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Module Demonstrator</h4>
+
+              <span>Queen Mary University of London, Jan 2023 - Present </span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                Modules Demonstrated:
+                SPA4601 - Professional Skills for Scientists, SPA5131 - Practical Techniques for Data Science
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">Software Engineer</h4>
 
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
+              <span>Siemens Industry Software, Jan 2022 — Sep 2022</span>
 
             </li>
 
@@ -633,6 +470,7 @@
 
         </section>
 
+        <!-- These are cool but they're not really useful to anybody
         <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
@@ -693,25 +531,27 @@
 
           </ul>
 
-        </section>
+          
 
+        </section>
+        -->
       </article>
 
 
 
 
-
+      
       <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page-retired="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
-        <section class="projects">
+        <section class="portfolio">
 
           <ul class="filter-list">
 
@@ -937,26 +777,235 @@
 
       </article>
 
+    <!--- #PUBLICATIONS
+    -->
 
+    <article class="publications" data-page="publications">
+
+      <header>
+        <h2 class="h2 article-title">Publications</h2>
+      </header>
+
+      <section class="blog-posts">
+
+        <ul class="blog-posts-list">
+
+          <li class="blog-post-item">
+            <a href="#">
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                <p class="blog-text">
+                  Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                </p>
+
+              </div>
+
+            </a>
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                <p class="blog-text">
+                  Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                </p>
+
+              </div>
+
+            </a>
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                <p class="blog-text">
+                  Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                </p>
+
+              </div>
+
+            </a>
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                <p class="blog-text">
+                  Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                </p>
+
+              </div>
+
+            </a>
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                <p class="blog-text">
+                  Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+              </div>
+
+            </a>
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                <p class="blog-text">
+                  Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                </p>
+
+              </div>
+
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
 
 
 
       <!--
-        - #BLOG
+        - #PROJECTS
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="projects" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="blog-posts">
 
-          <ul class="blog-posts-list">
+          <ul class="filter-list">
 
-            <li class="blog-post-item">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Software</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Hardware</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Gardening</button>
+            </li>
+
+          </ul>
+
+          <ul class="blog-posts-list">
+<!-- 
+            <li class="blog-post-item active" data-filter-item data-category="software">
               <a href="#">
+
+                <div class="blog-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
@@ -965,7 +1014,7 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Software</p>
 
                     <span class="dot"></span>
 
@@ -983,8 +1032,13 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
               <a href="#">
+
+
+                <div class="blog-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
@@ -1011,8 +1065,13 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
               <a href="#">
+
+
+                <div class="blog-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
@@ -1039,8 +1098,13 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
               <a href="#">
+
+
+                <div class="blog-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
@@ -1067,8 +1131,13 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
               <a href="#">
+
+
+                <div class="blog-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
@@ -1095,8 +1164,13 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous">
               <a href="#">
+
+
+                <div class="blog-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
@@ -1122,7 +1196,7 @@
 
               </a>
             </li>
-
+ -->
           </ul>
 
         </section>
@@ -1134,8 +1208,195 @@
 
 
       <!--
+        - #Talks
+      -->
+
+      <article class="talks" data-page="talks">
+
+        <header>
+          <h2 class="h2 article-title">Talks</h2>
+        </header>
+        <p class="blog-text">
+          Talkmap
+        </p>
+        <section class="blog-posts">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Poster</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Talk</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Seminar</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Miscellaneous</button>
+            </li>
+
+
+          </ul>
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item active" data-filter-item data-category="poster" content-path="./assets/talks/2023-12-19-NuPhys.html">
+              <a href="#">
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Software</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-12-19">December 19th, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">NuPhys 2023</h3>
+
+                  <p class="blog-text">
+                    A poster I presented at the NuPhys 2023 Conference.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="miscellaneous" content-path="./assets/talks/2023-09-14-stfc-summer-school-outreach-video.html">
+              <a href="#">
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Software</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-09-14">September 14th, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">2023 STFC HEP Summer School</h3>
+
+                  <p class="blog-text">
+                    An outreach video I made for the 2023 STFC HEP Summer School.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="talk" content-path="./assets/talks/2023-09-07-stfc-summer-school-poster.html">
+              <a href="#">
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Software</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-09-07">September 7th, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">2023 STFC HEP Summer School</h3>
+
+                  <p class="blog-text">
+                    A presentation I gave at the 2023 STFC HEP Summer School.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="talk" content-path="./assets/talks/2023-09-07-nd-prototypes-analysis-meeting.html">
+              <a href="#">
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Software</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-09-07">September 7th, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">2023 ND Prototypes Analysis Workshop</h3>
+
+                  <p class="blog-text">
+                    A presentation I gave at the 2023 ND Prototypes Analysis Workshop.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item active" data-filter-item data-category="poster" content-path="./assets/talks/2023-08-10-inss-poster.html">
+              <a href="#">
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Software</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-08-10">Aug 8th, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">2023 INSS Poster</h3>
+
+                  <p class="blog-text">
+                    A poster I presented at the 2023 International Neutrino Summer School.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-filter-item data-category="poster" content-path="./assets/talks/2023-06-06-symposium-poster.html">
+              <a href="#">
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Software</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-06-06">June 6th, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">2023 QMUL SPCS PhD Symposium</h3>
+
+                  <p class="blog-text">
+                    A poster I presented at the 2023 QMUL SPCS PhD symposium.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+      
+      <!--
         - #CONTACT
       -->
+      <!--
 
       <article class="contact" data-page="contact">
 
@@ -1175,6 +1436,7 @@
         </section>
 
       </article>
+      -->
 
     </div>
 
