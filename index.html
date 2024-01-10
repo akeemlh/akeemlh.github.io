@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Akeem L Hart</title>
 
   <!--
     - favicon
@@ -147,6 +147,8 @@
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
+
+          <ion-icon class="theme-switch" name="moon-outline"  id=themeToggleIcon onclick="toggleTheme()" title="Toggle light/dark theme"></ion-icon>
 
           <!--
           <li class="social-item">
@@ -1479,6 +1481,47 @@
       -->
 
     </div>
+
+
+
+    <!-- <div id="cookieNotice" class="cookie-overlay" style="display: none;"> -->
+<!--     <div id="cookieNotice" class="cookie-overlay">
+      <div class="cookie-consent-notice">
+        <div id="closeIcon" style="display: none;">
+        </div>
+        <div class="title-wrap">
+            <h4>Cookie Consent</h4>
+        </div>
+        <div class="content-wrap">
+            <div class="msg-wrap">
+                <p>Cookies are required to change display themes (So the theme can persist between sessions). By continuing to use this website, you agree to the <a href="/terms">Privacy Policy</a></p>
+                <div class="btn-wrap">
+                    <button class="btn btn-inline" onclick="acceptCookieConsent(true);">Accept</button>
+                    <button class="btn btn-inline" onclick="acceptCookieConsent(false);">Reject</button>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div> -->
+
+
+
+  <div id="simple-cookie-consent" class = "overlay-container">
+    <div class="cookie-consent-container">
+      <div class="cookie-consent-notice">
+        <h4>Your Cookie Preferences</h4>
+        <hr>
+        <p>Cookies are required to change display themes (So the theme can persist between sessions).</p>
+      </div>
+      <div class="cookie-consent-selection">
+        <button value="false" class="cookie-consent-deny" onclick="acceptCookieConsent(true);">Reject</button>
+        <button value="true" class="cookie-consent-allow" onclick="acceptCookieConsent(true);">Accept</button>
+      </div>
+    </div>
+  </div>
+
+
+
 
   </main>
 
