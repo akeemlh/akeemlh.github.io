@@ -163,6 +163,7 @@ function acceptCookieConsent(Accepted){
   {
     setCookie('user_cookie_consent', 1, 30);
     cookiesAccepted=true;
+    toggleTheme();
   }
   else
   {
