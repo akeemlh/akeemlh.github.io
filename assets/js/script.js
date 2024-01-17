@@ -85,7 +85,7 @@ const filterFunc = function (selectedValue) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    } else if (filterItems[i].dataset.category.includes(selectedValue)) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
@@ -209,7 +209,6 @@ function toggleTheme()
 
 
 // add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
 
 for (let i = 0; i < filterBtn.length; i++) {
 
@@ -219,9 +218,15 @@ for (let i = 0; i < filterBtn.length; i++) {
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
-    lastClickedBtn.classList.remove("active");
     this.classList.add("active");
-    lastClickedBtn = this;
+
+    for (let j = 0; j < filterBtn.length; j++)
+    {
+      if (!(filterBtn[j]===filterBtn[i]) && filterBtn[j].classList.contains("active"))
+      {
+        filterBtn[j].classList.remove("active")
+      }
+    }
 
   });
 
@@ -273,6 +278,23 @@ for (let i = 0; i < navigationLinks.length; i++) {
       } else {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
+      }
+    }
+    //Ensure when we change page, all tiles start of loaded
+    for (let i = 0; i < contentTiles.length; i++) {
+      if (!contentTiles[i].classList.contains("active"))
+      {
+        contentTiles[i].classList.add("active");
+      }
+    }
+    for (let i = 0; i < filterBtn.length; i++) {
+      if (filterBtn[i].classList.contains("active") && filterBtn[i].innerText.toLowerCase()!="all")
+      {
+        filterBtn[i].classList.remove("active");
+      }
+      else if (filterBtn[i].innerText.toLowerCase()==="all" && !filterBtn[i].classList.contains("active"))
+      {
+        filterBtn[i].classList.add("active");
       }
     }
 
