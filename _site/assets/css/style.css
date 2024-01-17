@@ -1491,15 +1491,21 @@ iframe{
 
 
 
-  .theme-switch {
-    color: var(--all-purpose-grey-2);
-    font-size: 18px;
-  }
-  
-  
-  .theme-switch:hover { color: var(--all-purpose-grey); }
-  
 
+  
+ion-icon {
+    pointer-events: none;
+}
+
+.iconSpan {
+  color: var(--all-purpose-grey-2);
+  font-size: 18px;
+}
+.iconSpan:hover
+{
+  cursor: pointer;
+  color: var(--all-purpose-grey); 
+}
 
 
 
