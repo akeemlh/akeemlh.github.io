@@ -10,6 +10,11 @@ var addressPoints = [
     -1.2529776819677187
   ],
   [
+    "CERN, Meyrin, Switzerland",
+    46.234169,
+    6.051404
+  ],
+  [
     "Queen Mary University of London, Mile End, London, United Kingdom",
     51.52492685,
     -0.03924405317429028
@@ -20,8 +25,8 @@ var addressPoints = [
     -0.1121582948025203
   ],
   [
-    "Wilson Hall, Fermilab, Illinois, United States",
-    41.83825925,
-    -88.26171241235335
+    "Fermilab, Illinois, United States",
+    41.8422582,
+    -88.24578204859304
   ]
 ];
