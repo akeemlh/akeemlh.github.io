@@ -25,6 +25,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+  
+  <!--
+    - stylesheets for talkmap
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/talkmap/leaflet_dist/screen.css" />
+
+  <link rel="stylesheet" href="assets/talkmap/leaflet_dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="assets/talkmap/leaflet_dist/MarkerCluster.Default.css" />
+  <script src="assets/talkmap/leaflet_dist/leaflet.markercluster-src.js"></script>
+  <script src="assets/talkmap/org-locations.js"></script>
 </head>
 
 <body>
@@ -946,7 +961,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2023-09-14">April 1st, 2023</time>
+                    <time datetime="2023-09-14">Apr 1st, 2023</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">Hydroponic Vertical Garden</h3>
@@ -981,7 +996,7 @@
         <header>
           <h2 class="h2 article-title">Talks</h2>
         </header>
-        <p class="blog-text article-note"><a onclick="displayContent('./assets/talks/talkmap.html')">
+        <p class="blog-text article-note"><a onclick="displayContent('./assets/talkmap/map.html')">
           Click here to see a map of everywhere I've given a talk!</a>
         </p>
         <section class="blog-posts">
@@ -1265,5 +1280,15 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3GGZ40DRZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3GGZ40DRZB');
+</script>
 
 </html>

@@ -25,6 +25,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+  
+  <!--
+    - stylesheets for talkmap
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/talkmap/leaflet_dist/screen.css" />
+
+  <link rel="stylesheet" href="assets/talkmap/leaflet_dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="assets/talkmap/leaflet_dist/MarkerCluster.Default.css" />
+  <script src="assets/talkmap/leaflet_dist/leaflet.markercluster-src.js"></script>
+  <script src="assets/talkmap/org-locations.js"></script>
 </head>
 
 <body>
@@ -981,7 +996,7 @@
         <header>
           <h2 class="h2 article-title">Talks</h2>
         </header>
-        <p class="blog-text article-note"><a onclick="displayContent('./assets/talks/talkmap.html')">
+        <p class="blog-text article-note"><a onclick="displayContent('./assets/talkmap/map.html')">
           Click here to see a map of everywhere I've given a talk!</a>
         </p>
         <section class="blog-posts">

@@ -40,7 +40,11 @@ for file in g:
 
 
 m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="assets/talkmap", hashed_usernames=False)
+
+#Running this line regenerated everything relating to the map, style sheets, html etc. I have made changes to the stylesheets to make it fit better on the sit so running this will overwrite that. Only run if for whatever reason you actually want to regenerate all of this from the ground up. If you just want to update the locations/pins on the map run the line below and leave this commented out
+#getorg.orgmap.output_html_cluster_map(location_dict, folder_name="assets/talkmap", hashed_usernames=False)
+
+getorg.orgmap.location_dict_to_jsvar(location_dict, folder_name="assets/talkmap/org-locations.js", hashed_usernames=False)
 
 
 
