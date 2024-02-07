@@ -104,19 +104,51 @@ function displayContent(contentPath){
       navigationLinks[i].classList.remove("active");
   }
   let loadedcontent = document.getElementById("loadedContent");
-  console.log(loadedcontent.innerHTML.length)
   if  (loadedcontent.innerHTML.length!=0)
   {
     loadedcontent.innerHTML="";
   }
-  $('#loadedContent').load(contentPath);
-  loadedcontent.classList.add("active");
+  //$('#loadedContent').load(contentPath);
 
-  //if (loadedcontent.classList.contains("active"))
-  //{
-  //  loadedcontent.classList.remove("active");
-  //}
+  $('#loadedContent').load(contentPath, function() {
+    loadedcontent.classList.add("active");
+
+    resizeContentHeader();
+  });
+
 }
+
+function resizeContentHeader()
+{
+  const header = document.getElementById("contentHeader");
+  if (header)
+  {
+    const mainbox = document.getElementsByClassName("main-content")[0];
+    const mainboxrect = mainbox.getBoundingClientRect();
+    const headerrect = header.getBoundingClientRect();
+    const navbar = document.getElementsByClassName("navbar")[0];
+    const navbarrect = navbar.getBoundingClientRect();
+
+    if (!(headerrect.right < navbarrect.left || 
+      headerrect.left > navbarrect.right || 
+      headerrect.bottom < navbarrect.top || 
+      headerrect.top > navbarrect.bottom) )
+    {
+      const width = mainboxrect.width-navbarrect.width;
+
+      $("#contentHeader").css({
+        width: width
+      });
+    }
+    else{
+      $("#contentHeader").css({
+        width: 'auto'
+      });
+    }
+  }
+}
+
+window.onresize = resizeContentHeader;
 
 const contentTiles = document.querySelectorAll("[data-filter-item]");
 
@@ -191,7 +223,6 @@ function toggleTheme()
       deleteCookie("theme");
       setCookie("theme", 'dark', "30");
       themeIcon.setAttribute("name","sunny-outline")
-      console.log("set dark mode")
     }
     else if (themeIcon.getAttribute("name") == "sunny-outline")
     {
@@ -199,7 +230,6 @@ function toggleTheme()
       deleteCookie("theme");
       setCookie("theme", 'light', "30");
       themeIcon.setAttribute("name","moon-outline")
-      console.log("set light mode")
     }
   }
 }
